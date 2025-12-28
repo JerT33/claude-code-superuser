@@ -75,18 +75,13 @@ Another clean commit.
 
 ## Fix the Crash
 
-### Step 1: Fix the Pause Function
+### Step 1: Fix the Pause Handler
 
 ```
-Fix the pause_timer function so it doesn't crash
+Fix the handle_pause function so pressing 'p' doesn't crash the app
 ```
 
-This is trickier—the function references `remaining` which doesn't exist in that scope. Claude might:
-- Make it a global variable
-- Remove the broken function
-- Implement a proper pause mechanism
-
-For now, any fix that prevents the crash is fine. We're learning commands, not building production code yet.
+The function references `remaning` (typo) which doesn't exist. Claude should fix it to properly pause the timer.
 
 ### Step 2: Commit
 
