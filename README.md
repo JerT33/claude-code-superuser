@@ -59,37 +59,37 @@ cd claude-code-superuser
 python src/pomodoro.py start
 
 # Start the tutorial
-# Open docs/00-the-broken-app.md
+# Open lessons/00-the-broken-app.md
 ```
 
 ## Chapters
 
 ### Phase 0: Setup
-- [Chapter 0: The Broken App](docs/00-the-broken-app.md) - See what you're working with
+- [Chapter 0: The Broken App](lessons/00-the-broken-app.md) - See what you're working with
 
 ### Phase 1: Foundation
-- [Chapter 1: Global Setup](docs/01-global-setup.md) - Configure Claude Code with planning-first principles
-- [Chapter 2: Project Init](docs/02-project-init.md) - Initialize Claude Code in the project
-- [Chapter 3: Quick Wins](docs/03-quick-wins.md) - Fix obvious bugs, learn basic commands
+- [Chapter 1: Global Setup](lessons/01-global-setup.md) - Configure Claude Code with planning-first principles
+- [Chapter 2: Project Init](lessons/02-project-init.md) - Initialize Claude Code in the project
+- [Chapter 3: Quick Wins](lessons/03-quick-wins.md) - Fix obvious bugs, learn basic commands
 
 ### Phase 2: Core Skills
-- [Chapter 4: Your First Feature](docs/04-first-feature.md) - Add configurable timer with full planning workflow
-- [Chapter 5: Make It Pretty](docs/05-make-it-pretty.md) - Use visual feedback to improve the CLI
-- [Chapter 6: External Docs](docs/06-external-docs.md) - Fetch library documentation with plugins
-- [Chapter 7: Context Mastery](docs/07-context-mastery.md) - Manage context like a pro
+- [Chapter 4: Your First Feature](lessons/04-first-feature.md) - Add configurable timer with full planning workflow
+- [Chapter 5: Make It Pretty](lessons/05-make-it-pretty.md) - Use visual feedback to improve the CLI
+- [Chapter 6: External Docs](lessons/06-external-docs.md) - Fetch library documentation with plugins
+- [Chapter 7: Context Mastery](lessons/07-context-mastery.md) - Manage context like a pro
 
 ### Phase 3: Production Ready
-- [Chapter 8: Persistence & Stats](docs/08-persistence-stats.md) - Add session history with scope discipline
-- [Chapter 9: Testing & Hooks](docs/09-testing-hooks.md) - Add tests and automate quality checks
-- [Chapter 10: Git Workflows](docs/10-git-workflows.md) - Branches, PRs, and professional git
+- [Chapter 8: Persistence & Stats](lessons/08-persistence-stats.md) - Add session history with scope discipline
+- [Chapter 9: Testing & Hooks](lessons/09-testing-hooks.md) - Add tests and automate quality checks
+- [Chapter 10: Git Workflows](lessons/10-git-workflows.md) - Branches, PRs, and professional git
 
 ### Phase 4: Advanced
-- [Chapter 11: Custom Automation](docs/11-custom-automation.md) - Create your own skills and commands
-- [Chapter 12: Multi-Session Workflows](docs/12-multi-session.md) - Orchestrate parallel work with /resume
-- [Chapter 13: Advanced Config](docs/13-advanced-config.md) - Permissions, headless mode, team setup
+- [Chapter 11: Custom Automation](lessons/11-custom-automation.md) - Create your own skills and commands
+- [Chapter 12: Multi-Session Workflows](lessons/12-multi-session.md) - Orchestrate parallel work with /resume
+- [Chapter 13: Advanced Config](lessons/13-advanced-config.md) - Permissions, headless mode, team setup
 
 ### Reference
-- [Chapter 14: Cheat Sheet & Anti-Patterns](docs/14-cheatsheet.md) - Quick reference and common mistakes
+- [Chapter 14: Cheat Sheet & Anti-Patterns](lessons/14-cheatsheet.md) - Quick reference and common mistakes
 
 ## Skills You'll Learn
 
