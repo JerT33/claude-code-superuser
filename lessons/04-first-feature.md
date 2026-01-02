@@ -16,10 +16,10 @@ In Chapter 3, we fixed trivial bugs and skipped planning. But for features like 
 Type your request, then press `Shift+Tab` to send it in plan mode:
 
 ```
-Add the ability to set a custom timer duration. Users should be able to specify how many minutes they want when starting a pomodoro.
+Add the ability to set a custom timer duration. Users should be able to specify how many minutes they want when starting a pomodoro. Give me a couple of different options with pros/cons of each.
 ```
 
-(You can also prefix with `/plan` instead of using Shift+Tab)
+(Once a plan is created you can use `/plan` to view the plan anytime)
 
 This tells Claude to explore and plan *without* implementing.
 
@@ -65,7 +65,7 @@ Run the app yourself:
 python src/pomodoro.py start --minutes 5
 ```
 
-The timer should now count down from 5 minutes (or whatever duration Claude implemented).
+The timer should now count down from 5 minutes.
 
 ---
 
@@ -76,7 +76,7 @@ The timer should now count down from 5 minutes (or whatever duration Claude impl
 ## Skills Learned
 
 - [ ] Recognizing when to use plan mode
-- [ ] Plan mode (Shift+Tab or `/plan`)
+- [ ] Plan mode (Shift+Tab and `/plan`)
 - [ ] Reviewing and approving plans
 - [ ] Feature implementation workflow
 
