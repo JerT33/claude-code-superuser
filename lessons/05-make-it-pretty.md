@@ -24,7 +24,11 @@ Take a screenshot of your terminal showing the plain, ugly output.
 
 ### Step 2: Share the Screenshot with Claude
 
-In Claude Code, you can paste images directly or drag them in. Share your screenshot:
+**Taking a screenshot:** `Cmd+Ctrl+Shift+4` → drag to select area → copies to clipboard
+
+**Paste into Claude Code:** `Cmd+V`
+
+Share your screenshot:
 
 ```
 Here's what the timer currently looks like: [paste screenshot]
@@ -80,53 +84,20 @@ The red is too bright, use a softer color.
 ```
 
 ```
+The progress bar is printing multiple lines instead of updating in place. Fix it to overwrite the same line.
+```
+
+```
 Can you add a blinking cursor effect when paused?
 ```
 
-## What Claude Might Add
-
-Depending on your prompts, the final timer might have:
-
-- **Colors**: Using ANSI escape codes or a library like `colorama`
-- **Progress bar**: Visual representation of time remaining
-- **ASCII art**: A tomato made of characters
-- **Clear screen**: Clean display that updates in place
-- **Better formatting**: Centered text, borders, etc.
-
 ## Commit the Pretty Version
 
+Once you're happy with the visual adjustments:
+
 ```
-/commit
+commit these changes
 ```
-
-## Compare Before and After
-
-Take a final screenshot. Compare it to Chapter 0.
-
-<!-- SCREENSHOT: Before/after comparison -->
-
-The app has gone from embarrassing to impressive—and you described most of it visually.
-
-## Pro Tips
-
-### Terminal Font Matters
-
-Some ASCII art looks broken in certain fonts. If Claude's art doesn't render right, tell it:
-```
-My terminal uses [font name], the box-drawing characters aren't rendering.
-Use simpler ASCII characters.
-```
-
-### Color Support Varies
-
-Not all terminals support all colors:
-```
-My terminal doesn't support 256 colors, use basic ANSI colors only.
-```
-
-### Testing Visual Changes
-
-Always run the app after visual changes. What looks good in theory might look broken in practice.
 
 ---
 
@@ -139,7 +110,6 @@ Always run the app after visual changes. What looks good in theory might look br
 - [ ] Screenshot as feedback
 - [ ] Image input for design reference
 - [ ] Iterating visually
-- [ ] Multi-file edits
 
 ## Navigation
 
