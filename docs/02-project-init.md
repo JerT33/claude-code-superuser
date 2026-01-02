@@ -4,37 +4,21 @@ Now let's initialize Claude Code in the Pomodoro project and get oriented with t
 
 ## Initialize the Project
 
-### Step 1: Run claude init
+### Step 1: Run /init
 
-In the project directory:
+In your existing Claude session, type:
 
-```bash
-cd claude-code-superuser
-claude init
+```
+/init
 ```
 
-This creates a `.claude/` directory with project-specific settings.
+Claude will walk you through creating a `.claude/` directory and a project CLAUDE.md file. This gives Claude project-specific context every time you work on this codebase.
 
 <!-- SCREENSHOT: Terminal showing claude init output -->
 
-### Step 2: Create Project CLAUDE.md
-
-Now ask Claude to create a project-specific CLAUDE.md:
-
-```
-Create a project CLAUDE.md file at .claude/CLAUDE.md for this Pomodoro timer app.
-Include:
-- Brief description of the app (a CLI pomodoro timer)
-- The main file location (src/pomodoro.py)
-- Note that this is a learning project for Claude Code skills
-- How to run the app: python src/pomodoro.py start
-```
-
-Claude will create the file. This gives Claude project-specific context every time you work on this codebase.
-
 ## Explore the Codebase
 
-### Step 3: Ask Claude to Explore
+### Step 2: Ask Claude to Explore
 
 Now let's see Claude's exploration in action:
 
@@ -47,6 +31,8 @@ Watch what happens:
 - Claude reads files
 - The **context percentage** in your terminal increases
 - Claude summarizes its findings
+
+If you need to stop Claude mid-operation, press `Escape`.
 
 <!-- SCREENSHOT: Claude exploring with context percentage visible -->
 
@@ -61,58 +47,6 @@ Notice the percentage indicator (usually in your status bar or prompt). This sho
 
 For now, just notice it exists. We'll cover context management in Chapter 7.
 
-### Step 4: Run the App with Claude
-
-Ask Claude to run the app:
-
-```
-Run the pomodoro app and show me the output
-```
-
-Claude will execute:
-
-```bash
-python src/pomodoro.py start
-```
-
-<!-- SCREENSHOT: Claude running the app, showing buggy output -->
-
-Now ask:
-
-```
-Try running the pause command
-```
-
-Watch it crash. Claude can now see the problem firsthand.
-
-## What Claude Knows Now
-
-After this exploration, Claude has:
-- Read the project CLAUDE.md (project context)
-- Read the source code (implementation details)
-- Run the app (seen actual behavior)
-- Seen the crash (confirmed the bug)
-
-This context persists in your session. Claude remembers all of this as you continue.
-
-## Try It: Ask Questions
-
-Practice asking Claude questions about the codebase:
-
-```
-What's causing the timer to show the wrong time?
-```
-
-```
-Why does the pause command crash?
-```
-
-```
-List all the typos in the output strings
-```
-
-Claude can answer these because it's already explored the code.
-
 ---
 
 [Next: Chapter 3 - Quick Wins →](03-quick-wins.md)
@@ -121,11 +55,10 @@ Claude can answer these because it's already explored the code.
 
 ## Skills Learned
 
-- [ ] `claude init`
+- [ ] `/init` command
 - [ ] Project CLAUDE.md creation
 - [ ] Context percentage awareness
-- [ ] Bash commands (running the app)
-- [ ] Codebase exploration with Claude
+- [ ] Codebase exploration
 
 ## Navigation
 

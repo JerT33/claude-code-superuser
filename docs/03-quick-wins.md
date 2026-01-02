@@ -29,31 +29,23 @@ Watch Claude:
 
 ### Step 2: Verify the Fix
 
-```
-Run the app and show me the output
+Run the app yourself in another terminal:
+
+```bash
+python src/pomodoro.py help
 ```
 
 The output should now be spelled correctly.
 
 ## Commit the Fix
 
-### The /commit Command
-
 Now let's commit this fix:
 
 ```
-/commit
+commit these changes
 ```
 
-Claude will:
-1. Run `git status` to see changes
-2. Run `git diff` to see what changed
-3. Draft a commit message
-4. Create the commit
-
-<!-- SCREENSHOT: Claude running /commit -->
-
-**Important**: Claude writes the commit message based on the actual changes. You don't need to describe what you did—Claude already knows.
+Claude will run `git status`, `git diff`, draft a commit message, and create the commit.
 
 ## Fix the Timer Bug
 
@@ -68,10 +60,8 @@ Claude should find the bug in `format_time()` where it subtracts 1 from seconds 
 ### Step 2: Commit
 
 ```
-/commit
+commit these changes
 ```
-
-Another clean commit.
 
 ## Fix the Crash
 
@@ -86,50 +76,18 @@ The function references `remaning` (typo) which doesn't exist. Claude should fix
 ### Step 2: Commit
 
 ```
-/commit
+commit these changes
 ```
-
-## Keyboard Shortcuts
-
-While working, try these shortcuts:
-
-| Shortcut | Action |
-|----------|--------|
-| `Escape` | Cancel current operation |
-| `Ctrl+C` | Exit Claude Code |
-| `Up/Down` | Navigate command history |
-
-**Pro tip**: If Claude is generating something you don't want, hit `Escape` to stop it immediately.
-
-## Check Your Progress
-
-You've now made 3 commits:
-1. Fixed typos
-2. Fixed timer display
-3. Fixed pause crash
-
-Run:
-
-```
-Show me the git log with commit messages
-```
-
-Claude will run `git log` and show your progress.
-
-<!-- SCREENSHOT: Git log showing three commits -->
 
 ## The App So Far
 
-Run the app again:
+Run the app yourself to verify your fixes:
 
 ```bash
 python src/pomodoro.py start
 ```
 
-It should:
-- Display correct spelling
-- Show accurate time
-- Not crash on pause (though pause may not do much yet)
+Press `p` to test pause, `q` to quit. It should no longer crash, display correct spelling, and show accurate time.
 
 Still ugly. Still hardcoded. But functional.
 
@@ -143,8 +101,7 @@ Still ugly. Still hardcoded. But functional.
 
 - [ ] Recognizing trivial tasks (skip planning)
 - [ ] Basic prompting for fixes
-- [ ] `/commit` command
-- [ ] Keyboard shortcuts (Escape, etc.)
+- [ ] Committing with natural language
 - [ ] Incremental commits
 
 ## Navigation
