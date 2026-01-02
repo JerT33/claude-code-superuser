@@ -1,143 +1,71 @@
 # Chapter 4: Your First Feature
 
-Now we're adding real functionality: configurable timer duration. This is a **standard task**—time to use the full planning workflow.
+Now we're adding real functionality: configurable timer duration. This isn't a trivial fix—it's a feature with multiple valid approaches. Time to use **plan mode**.
 
-## Standard Task Workflow
+## When to Use Plan Mode
 
-This isn't a typo fix. We're adding a feature that could be implemented multiple ways. Your Global CLAUDE.md tells Claude to:
-
-1. Clarify requirements
-2. Explore the codebase
-3. Propose 2-3 options
-4. Wait for approval
-5. Implement step by step
-
-Let's see this in action.
+In Chapter 3, we fixed trivial bugs and skipped planning. But for features like this:
+- Multiple implementation approaches exist
+- Architectural decisions need to be made
+- You want to review the approach before Claude starts coding
 
 ## The Exercise
 
-### Step 1: Request the Feature
+### Step 1: Enter Plan Mode
+
+Type your request, then press `Shift+Tab` to send it in plan mode:
 
 ```
-Add the ability to set a custom timer duration. Users should be able to
-specify how many minutes they want when starting a pomodoro.
+Add the ability to set a custom timer duration. Users should be able to specify how many minutes they want when starting a pomodoro.
 ```
 
-### Step 2: Watch Claude's Workflow
+(You can also prefix with `/plan` instead of using Shift+Tab)
 
-If your Global CLAUDE.md is set up correctly, Claude should:
+This tells Claude to explore and plan *without* implementing.
 
-**Clarify** (maybe):
-> "Should the duration be passed as a command line argument, or should there be a config file?"
+### Step 2: Watch Claude Plan
 
-If Claude asks, answer:
-```
-Command line argument. Like: python pomodoro.py start 15
-```
+Claude will:
+1. Explore the codebase
+2. Identify where changes are needed
+3. Propose implementation options
+4. Wait for your approval
 
-**Plan** with options:
-> Here are some approaches:
->
+You might see something like:
+
 > **Option 1**: Positional argument
 > - `python pomodoro.py start 15`
-> - Simple, but 15 what? Seconds? Minutes?
+> - Simple, but ambiguous (15 what?)
 >
 > **Option 2**: Named argument
 > - `python pomodoro.py start --minutes 15`
 > - Clear, self-documenting
 >
-> **Option 3**: Short flag
-> - `python pomodoro.py start -m 15`
-> - Shorter but less discoverable
->
 > I recommend Option 2...
 
-<!-- SCREENSHOT: Claude presenting options -->
+### Step 3: Approve the Plan
 
-### Step 3: Approve and Implement
+Claude will prompt you to **auto accept** or **request approval**. Choose **request approval** so you can review each change as it's made.
 
-Pick an option (or let Claude proceed with its recommendation):
+Once you're happy with the plan, tell Claude to proceed.
 
-```
-Go with option 2, the named argument
-```
+Claude exits plan mode and implements the feature. As each edit comes up, you can reject it and provide feedback using option 3—this lets you steer the implementation without starting over.
 
-Claude implements the feature.
-
-## Extended Thinking
-
-For more complex decisions, you can ask Claude to think harder:
-
-### The `think` Keyword
-
-Add "think" to your prompt:
+### Step 4: Commit
 
 ```
-think about edge cases for the duration argument - what if someone
-passes 0, or a negative number, or a string?
+commit these changes
 ```
-
-Claude will spend more time reasoning through the problem before responding.
-
-### The `ultrathink` Keyword
-
-For even deeper analysis:
-
-```
-ultrathink about the architecture for this timer - if we later want to
-add break timers, repeating pomodoros, and stats, how should we structure
-the code now to support that?
-```
-
-This uses more tokens but produces more thorough analysis.
-
-## Model Switching
-
-Different models have different strengths:
-
-| Model | Best For | Cost |
-|-------|----------|------|
-| **Haiku** | Simple edits, quick fixes | $ |
-| **Sonnet** | Most coding tasks | $$ |
-| **Opus** | Complex architecture, deep analysis | $$$ |
-
-For this feature:
-- Use **Sonnet** (default) for implementation
-- Use **Opus** if you want deep architectural thinking
-
-You can switch models in settings or by starting Claude with a specific model flag.
-
-## Cost Awareness
-
-Extended thinking and larger models cost more. For a simple feature like this:
-- `think` is probably sufficient
-- `ultrathink` with Opus is overkill
-- Save the heavy thinking for complex architectural decisions
-
-## Commit the Feature
-
-```
-/commit
-```
-
-Claude should create a commit message that describes the new feature.
 
 ## Test It
+
+Run the app yourself:
 
 ```bash
 python src/pomodoro.py start --minutes 5
 ```
 
-The timer should now count down from 5 minutes.
-
-Try edge cases:
-```bash
-python src/pomodoro.py start --minutes 0
-python src/pomodoro.py start --minutes -5
-python src/pomodoro.py start --minutes abc
-```
-
-Does it handle them gracefully? If not, that's a future improvement.
+The timer should now count down from 5 minutes (or whatever duration Claude implemented).
 
 ---
 
@@ -147,12 +75,10 @@ Does it handle them gracefully? If not, that's a future improvement.
 
 ## Skills Learned
 
-- [ ] Standard task workflow in action
-- [ ] Planning with 2-3 options
-- [ ] Extended thinking (`think` keyword)
-- [ ] Deep thinking (`ultrathink` keyword)
-- [ ] Model switching (haiku/sonnet/opus)
-- [ ] Cost awareness
+- [ ] Recognizing when to use plan mode
+- [ ] Plan mode (Shift+Tab or `/plan`)
+- [ ] Reviewing and approving plans
+- [ ] Feature implementation workflow
 
 ## Navigation
 
