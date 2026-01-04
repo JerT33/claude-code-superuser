@@ -32,6 +32,35 @@ Ultrathink about the best way to implement session persistence with statistics t
 
 Claude will spend more time reasoning before responding, resulting in better solutions for complex problems.
 
+## Model Selection
+
+Different models excel at different tasks. Use `/model` to switch:
+
+```
+/model
+```
+
+This shows available models and lets you switch.
+
+| Model | Best For |
+|-------|----------|
+| **Opus** | Planning, architecture decisions |
+| **Sonnet** | Implementation, most coding tasks |
+
+**Pro tip:** Use Opus for planning, then switch to Sonnet when the plan looks good and you're ready to implement.
+
+```
+/model opus
+```
+
+Plan your feature with Opus, then:
+
+```
+/model sonnet
+```
+
+Switch to Sonnet for the actual coding.
+
 ## Scope Discipline
 
 When implementing features, stay focused:
@@ -117,6 +146,7 @@ The timer should now count down from 5 minutes.
 - [ ] Recognizing when to use plan mode
 - [ ] Plan mode (Shift+Tab and `/plan`)
 - [ ] Extended thinking (`think`, `ultrathink`)
+- [ ] Model selection (`/model`)
 - [ ] Scope discipline
 - [ ] Reviewing and approving plans
 

@@ -27,6 +27,8 @@ Congratulations—you've completed the tutorial. Here's your quick reference and
 | `/resume` | Resume a previous session |
 | `/help` | Show help |
 | `/init` | Initialize project |
+| `/model` | Switch models (Opus, Sonnet, Haiku) |
+| `/plan` | View current plan |
 
 ### Custom Commands (Chapter 9)
 
@@ -51,13 +53,15 @@ Congratulations—you've completed the tutorial. Here's your quick reference and
 | `think` | Moderate complexity, need more reasoning |
 | `ultrathink` | High complexity, architecture decisions |
 
-### Models
+### Models (`/model`)
 
 | Model | Best For | Cost |
 |-------|----------|------|
 | Haiku | Quick fixes, simple tasks | $ |
 | Sonnet | Most coding tasks | $$ |
-| Opus | Complex architecture | $$$ |
+| Opus | Planning, architecture | $$$ |
+
+**Pro tip:** Use Opus for planning, then switch to Sonnet for implementation.
 
 ---
 

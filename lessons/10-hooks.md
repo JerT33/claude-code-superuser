@@ -1,77 +1,105 @@
 # Chapter 10: Hooks
 
-Hooks are shell commands that run automatically at certain points. They let you automate quality checks and enforce standards.
+Claude Code hooks let you run shell commands automatically when Claude performs certain actions. This is powerful for enforcing standards and automating workflows.
 
 ## Types of Hooks
 
 | Hook | When It Runs |
 |------|--------------|
-| Pre-commit | Before git commits |
-| Post-commit | After git commits |
-| Pre-push | Before git pushes |
-| File change | When files are modified |
+| `PreToolUse` | Before Claude uses a tool (Write, Edit, Bash, etc.) |
+| `PostToolUse` | After Claude uses a tool |
+| `Notification` | When Claude sends a notification |
+| `Stop` | Conditions that stop Claude's execution |
 
 ## The Exercise
 
-### Step 1: Set Up a Pre-Commit Hook
+### Step 1: View Current Hooks
 
 ```
-Set up a hook that runs pytest before every commit.
-If tests fail, the commit should be blocked.
+Show me my current Claude Code hooks configuration
 ```
 
-Claude will configure a pre-commit hook that:
-1. Runs `pytest tests/`
-2. Blocks the commit if any tests fail
-3. Allows the commit if tests pass
+Claude will check your `.claude/settings.json` or settings for any configured hooks.
 
-### Step 2: Test the Hook
+### Step 2: Add a Pre-Tool Hook
 
-```
-Make a change that breaks a test, then try to commit.
-```
-
-The commit should be blocked with test failure output.
+Let's add a hook that runs before any file edit:
 
 ```
-Fix the change, then commit again.
+Add a Claude Code hook that runs a linter check before any Edit or Write tool use.
+If the linter finds errors in the file being edited, warn me.
 ```
 
-Now it works.
+This creates a `PreToolUse` hook that runs before Claude modifies files.
 
-<!-- SCREENSHOT: Hook blocking a commit due to failed tests -->
-
-### Step 3: Add a Linter Hook
+### Step 3: Add a Post-Tool Hook
 
 ```
-Add a hook that runs a Python linter (ruff or flake8) on changed files.
-Warn but don't block if there are issues.
+Add a hook that automatically runs tests after Claude edits any Python file.
 ```
 
-This gives you feedback about code style without being too strict.
+This creates a `PostToolUse` hook that ensures tests pass after changes.
 
 ## Hook Configuration
 
-Hooks are typically configured in:
-- `.claude/hooks.json` for Claude Code specific hooks
-- `.pre-commit-config.yaml` for pre-commit framework
-- Git hooks in `.git/hooks/`
+Hooks are configured in `.claude/settings.json`:
 
-Ask Claude where your hooks are configured:
+```json
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "tool": "Edit",
+        "command": "ruff check $FILE"
+      }
+    ],
+    "PostToolUse": [
+      {
+        "tool": "Edit",
+        "command": "pytest tests/ -q"
+      }
+    ]
+  }
+}
+```
+
+Ask Claude to explain your configuration:
 
 ```
-Show me where the hooks are configured and explain each one.
+Explain my current hooks and what each one does.
 ```
 
-## Quality Automation
+## Practical Hook Examples
 
-With tests (from Chapter 6) and hooks, you now have:
+### Prevent Editing Certain Files
 
-1. **Unit tests** - Verify code works correctly
-2. **Pre-commit hook** - Prevents committing broken code
-3. **Linter hook** - Maintains code style
+```
+Add a hook that blocks editing any file in the /config directory without confirmation.
+```
 
-This catches problems before they become bugs in production.
+### Auto-Format on Save
+
+```
+Add a hook that runs black formatter after any Python file is written.
+```
+
+### Notify on Long Operations
+
+```
+Add a notification hook that alerts me if any Bash command takes longer than 30 seconds.
+```
+
+## When to Use Hooks
+
+**Good use cases:**
+- Running linters/formatters automatically
+- Running tests after changes
+- Preventing accidental edits to sensitive files
+- Logging Claude's actions
+
+**Avoid:**
+- Hooks that slow down every operation
+- Complex logic (use skills instead)
 
 ## Commit
 
@@ -89,11 +117,11 @@ commit these changes
 
 ## Skills Learned
 
-- [ ] Hook types and when they run
-- [ ] Pre-commit hooks
-- [ ] Linter hooks
-- [ ] Hook configuration locations
-- [ ] Quality automation
+- [ ] Claude Code hook types
+- [ ] PreToolUse hooks
+- [ ] PostToolUse hooks
+- [ ] Hook configuration in settings
+- [ ] Practical hook patterns
 
 ## Navigation
 
