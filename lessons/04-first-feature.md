@@ -9,29 +9,6 @@ In Chapter 3, we fixed trivial bugs and skipped planning. But for features like 
 - Architectural decisions need to be made
 - You want to review the approach before Claude starts coding
 
-## Extended Thinking
-
-For complex tasks, you can ask Claude to think more deeply by including keywords in your prompt:
-
-| Keyword | When to Use |
-|---------|-------------|
-| `think` | Moderate complexity, need more reasoning |
-| `ultrathink` | High complexity, architecture decisions |
-
-Example:
-
-```
-Think through how to add custom timer duration. Consider different approaches and their tradeoffs.
-```
-
-For very complex features, you can combine with plan mode:
-
-```
-Ultrathink about the best way to implement session persistence with statistics tracking.
-```
-
-Claude will spend more time reasoning before responding, resulting in better solutions for complex problems.
-
 ## Model Selection
 
 Different models excel at different tasks. Use `/model` to switch:
@@ -135,6 +112,29 @@ python src/pomodoro.py start --minutes 5
 
 The timer should now count down from 5 minutes.
 
+## Extended Thinking
+
+For complex tasks, you can ask Claude to think more deeply by including keywords in your prompt:
+
+| Keyword | When to Use |
+|---------|-------------|
+| `think` | Moderate complexity, need more reasoning |
+| `ultrathink` | High complexity, architecture decisions |
+
+Example:
+
+```
+Think through how to add custom timer duration. Consider different approaches and their tradeoffs.
+```
+
+For very complex features, you can combine with plan mode:
+
+```
+Ultrathink about the best way to implement session persistence with statistics tracking.
+```
+
+Claude will spend more time reasoning before responding, resulting in better solutions for complex problems.
+
 ---
 
 [Next: Chapter 5 - Git Workflows →](05-git-workflows.md)
@@ -145,10 +145,10 @@ The timer should now count down from 5 minutes.
 
 - [ ] Recognizing when to use plan mode
 - [ ] Plan mode (Shift+Tab and `/plan`)
-- [ ] Extended thinking (`think`, `ultrathink`)
 - [ ] Model selection (`/model`)
 - [ ] Scope discipline
 - [ ] Reviewing and approving plans
+- [ ] Extended thinking (`think`, `ultrathink`)
 
 ## Navigation
 

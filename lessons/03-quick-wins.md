@@ -15,8 +15,7 @@ The bugs we're fixing here are trivial. We don't need a planning phase. We just 
 ### Step 1: Ask Claude to Fix Typos
 
 ```
-Fix all the typos in the output strings in src/pomodoro.py.
-Things like "Tmer" should be "Timer", "Pomdoro" should be "Pomodoro", etc.
+Fix all the typos in the output strings in src/pomodoro.py
 ```
 
 Watch Claude:

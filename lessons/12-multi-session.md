@@ -177,6 +177,8 @@ In practice, you might:
 - Implement features in focused sessions
 - Resume the planning session for standup/review
 
+For larger features, consider **stacked PRs**—multiple branches that build on each other, each with a small reviewable PR. Combine this with multi-session workflows for complex work.
+
 ### Context Preservation
 
 The main session remembers:
