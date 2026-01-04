@@ -34,6 +34,24 @@ Watch what happens:
 
 If you need to stop Claude mid-operation, press `Escape`.
 
+### Step 3: Ask Specific Questions
+
+One of Claude's most useful capabilities is explaining code. Try:
+
+```
+How does the timer countdown work? Walk me through the logic.
+```
+
+```
+What happens when the user presses 'p' to pause?
+```
+
+```
+Where is the time formatting logic? Explain it.
+```
+
+This is invaluable when working with unfamiliar codebases. Claude can trace execution flow, explain complex functions, and help you understand code faster than reading it yourself.
+
 <!-- SCREENSHOT: Claude exploring with context percentage visible -->
 
 ### Understanding Context Percentage
@@ -57,8 +75,9 @@ For now, just notice it exists. We'll cover context management in Chapter 7.
 
 - [ ] `/init` command
 - [ ] Project CLAUDE.md creation
-- [ ] Context percentage awareness
 - [ ] Codebase exploration
+- [ ] Asking Claude to explain code
+- [ ] Context percentage awareness
 
 ## Navigation
 

@@ -1,4 +1,4 @@
-# Chapter 14: Cheat Sheet & Anti-Patterns
+# Chapter 13: Cheat Sheet & Anti-Patterns
 
 Congratulations—you've completed the tutorial. Here's your quick reference and a guide to common mistakes.
 
@@ -16,18 +16,25 @@ Congratulations—you've completed the tutorial. Here's your quick reference and
 | `claude --headless` | Non-interactive mode |
 | `exit` or `Ctrl+C` | Exit Claude Code |
 
-### Slash Commands
+### Built-in Commands
 
 | Command | What It Does |
 |---------|--------------|
-| `/commit` | Create a git commit |
-| `/pr` | Create a pull request |
 | `/clear` | Clear conversation context |
 | `/compact` | Compress context |
 | `/revert` | Revert to previous state |
 | `/sessions` | List resumable sessions |
 | `/resume` | Resume a previous session |
 | `/help` | Show help |
+| `/init` | Initialize project |
+
+### Custom Commands (Chapter 9)
+
+| Command | What It Does |
+|---------|--------------|
+| `/commit` | Create a git commit |
+| `/test` | Run tests |
+| `/lint` | Run linter |
 
 ### Keyboard Shortcuts
 
@@ -205,7 +212,6 @@ You're a Claude Code Superuser if you can:
 - [ ] Use extended thinking effectively
 - [ ] Manage context proactively
 - [ ] Use visual feedback with screenshots
-- [ ] Fetch external documentation when needed
 - [ ] Create and manage branches and PRs
 - [ ] Write and use custom skills and commands
 - [ ] Orchestrate parallel work with `/resume`
@@ -244,7 +250,7 @@ You did that—with Claude Code as your pair.
 
 | Previous | Up |
 |----------|-----|
-| [Chapter 13: Advanced Config](13-advanced-config.md) | [README](../README.md) |
+| [Chapter 12: Multi-Session Workflows](12-multi-session.md) | [README](../README.md) |
 
 ---
 

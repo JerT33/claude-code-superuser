@@ -1,4 +1,4 @@
-# Chapter 13: Advanced Configuration
+# Chapter 11: Advanced Configuration
 
 Time for the power-user settings: permissions, headless mode, and team configuration.
 
@@ -181,7 +181,7 @@ for new team members joining this project.
 
 ---
 
-[Next: Chapter 14 - Cheat Sheet & Anti-Patterns →](14-cheatsheet.md)
+[Next: Chapter 12 - Multi-Session Workflows →](12-multi-session.md)
 
 ---
 
@@ -197,4 +197,4 @@ for new team members joining this project.
 
 | Previous | Up | Next |
 |----------|-----|------|
-| [Chapter 12: Multi-Session Workflows](12-multi-session.md) | [README](../README.md) | [Chapter 14: Cheat Sheet & Anti-Patterns](14-cheatsheet.md) |
+| [Chapter 10: Hooks](10-hooks.md) | [README](../README.md) | [Chapter 12: Multi-Session Workflows](12-multi-session.md) |

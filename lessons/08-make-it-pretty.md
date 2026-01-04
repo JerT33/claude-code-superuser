@@ -1,4 +1,4 @@
-# Chapter 5: Make It Pretty
+# Chapter 8: Make It Pretty
 
 The timer works, but it's ugly. Time to learn one of Claude Code's most powerful features: visual feedback.
 
@@ -101,7 +101,7 @@ commit these changes
 
 ---
 
-[Next: Chapter 6 - External Docs →](06-external-docs.md)
+[Next: Chapter 9 - Custom Automation →](09-custom-automation.md)
 
 ---
 
@@ -115,4 +115,4 @@ commit these changes
 
 | Previous | Up | Next |
 |----------|-----|------|
-| [Chapter 4: Your First Feature](04-first-feature.md) | [README](../README.md) | [Chapter 6: External Docs](06-external-docs.md) |
+| [Chapter 7: Context Mastery](07-context-mastery.md) | [README](../README.md) | [Chapter 9: Custom Automation](09-custom-automation.md) |

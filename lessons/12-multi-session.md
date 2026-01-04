@@ -87,7 +87,7 @@ Implement a break timer feature for the pomodoro app:
 Work through the implementation. Commit when done:
 
 ```
-/commit
+commit these changes
 ```
 
 Exit this session:
@@ -117,7 +117,7 @@ Implement a daily goals feature for the pomodoro app:
 Work through it. Commit:
 
 ```
-/commit
+commit these changes
 ```
 
 Exit:
@@ -237,7 +237,7 @@ Save a summary of this session for future reference.
 
 ---
 
-[Next: Chapter 13 - Advanced Config →](13-advanced-config.md)
+[Next: Chapter 13 - Cheat Sheet & Anti-Patterns →](13-cheatsheet.md)
 
 ---
 
@@ -254,4 +254,4 @@ Save a summary of this session for future reference.
 
 | Previous | Up | Next |
 |----------|-----|------|
-| [Chapter 11: Custom Automation](11-custom-automation.md) | [README](../README.md) | [Chapter 13: Advanced Config](13-advanced-config.md) |
+| [Chapter 11: Advanced Config](11-advanced-config.md) | [README](../README.md) | [Chapter 13: Cheat Sheet](13-cheatsheet.md) |

@@ -148,7 +148,7 @@ For long sessions:
 
 ---
 
-[Next: Chapter 8 - Persistence & Stats →](08-persistence-stats.md)
+[Next: Chapter 8 - Make It Pretty →](08-make-it-pretty.md)
 
 ---
 
@@ -164,4 +164,4 @@ For long sessions:
 
 | Previous | Up | Next |
 |----------|-----|------|
-| [Chapter 6: External Docs](06-external-docs.md) | [README](../README.md) | [Chapter 8: Persistence & Stats](08-persistence-stats.md) |
+| [Chapter 6: Testing](06-testing.md) | [README](../README.md) | [Chapter 8: Make It Pretty](08-make-it-pretty.md) |

@@ -1,8 +1,8 @@
-# Chapter 11: Custom Automation
+# Chapter 9: Custom Automation
 
-You've used built-in commands like `/commit` and `/pr`. Now let's create your own.
+You've been typing things like "commit these changes" throughout the tutorial. Now let's create shortcuts so you can just type `/commit` instead.
 
-## Skills vs Slash Commands
+## Slash Commands vs Skills
 
 Claude Code supports two types of custom automation:
 
@@ -13,36 +13,27 @@ Claude Code supports two types of custom automation:
 
 ## Creating a Slash Command
 
-### Step 1: Create a Test Command
+### Step 1: Create a Commit Command
 
-Let's make `/test` run the test suite:
-
-```
-Create a slash command called /test that runs pytest with verbose output.
-```
-
-Claude will create a configuration (typically in `.claude/commands/`):
-
-```json
-{
-  "name": "test",
-  "command": "pytest tests/ -v"
-}
-```
-
-### Step 2: Use the Command
-
-Now you can just type:
+Let's start with the most useful one—a `/commit` command:
 
 ```
-/test
+Create a slash command called /commit that commits all staged changes with a descriptive message.
 ```
 
-And Claude runs the tests.
+Claude will create a command configuration. Now instead of typing "commit these changes", you can just:
 
-### Step 3: Create More Commands
+```
+/commit
+```
 
-Some useful ones:
+### Step 2: Create More Commands
+
+Let's add a few more useful ones:
+
+```
+Create a /test command that runs pytest with verbose output.
+```
 
 ```
 Create a /lint command that runs ruff check on the src directory.
@@ -50,10 +41,6 @@ Create a /lint command that runs ruff check on the src directory.
 
 ```
 Create a /run command that starts the pomodoro timer with default settings.
-```
-
-```
-Create a /format command that runs black on all Python files.
 ```
 
 ## Creating a Skill
@@ -170,9 +157,17 @@ Delete the /release skill, I want to rewrite it.
 Edit the /test command to also include coverage.
 ```
 
+## Commit
+
+Try out your new `/commit` command:
+
+```
+/commit
+```
+
 ---
 
-[Next: Chapter 12 - Multi-Session Workflows →](12-multi-session.md)
+[Next: Chapter 10 - Hooks →](10-hooks.md)
 
 ---
 
@@ -187,4 +182,4 @@ Edit the /test command to also include coverage.
 
 | Previous | Up | Next |
 |----------|-----|------|
-| [Chapter 10: Git Workflows](10-git-workflows.md) | [README](../README.md) | [Chapter 12: Multi-Session Workflows](12-multi-session.md) |
+| [Chapter 8: Make It Pretty](08-make-it-pretty.md) | [README](../README.md) | [Chapter 10: Hooks](10-hooks.md) |

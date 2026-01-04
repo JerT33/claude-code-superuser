@@ -9,6 +9,45 @@ In Chapter 3, we fixed trivial bugs and skipped planning. But for features like 
 - Architectural decisions need to be made
 - You want to review the approach before Claude starts coding
 
+## Extended Thinking
+
+For complex tasks, you can ask Claude to think more deeply by including keywords in your prompt:
+
+| Keyword | When to Use |
+|---------|-------------|
+| `think` | Moderate complexity, need more reasoning |
+| `ultrathink` | High complexity, architecture decisions |
+
+Example:
+
+```
+Think through how to add custom timer duration. Consider different approaches and their tradeoffs.
+```
+
+For very complex features, you can combine with plan mode:
+
+```
+Ultrathink about the best way to implement session persistence with statistics tracking.
+```
+
+Claude will spend more time reasoning before responding, resulting in better solutions for complex problems.
+
+## Scope Discipline
+
+When implementing features, stay focused:
+
+- **Only build what's requested** - Don't add "nice to have" extras
+- **Resist over-engineering** - A simple solution that works beats a complex one
+- **Flag, don't fix** - If you notice unrelated issues, note them for later
+
+If Claude suggests additional features ("Should I also add X?"), the default answer is **no**:
+
+```
+Just the basics for now. We can add more later.
+```
+
+This keeps implementations clean and prevents scope creep.
+
 ## The Exercise
 
 ### Step 1: Enter Plan Mode
@@ -69,7 +108,7 @@ The timer should now count down from 5 minutes.
 
 ---
 
-[Next: Chapter 5 - Make It Pretty →](05-make-it-pretty.md)
+[Next: Chapter 5 - Git Workflows →](05-git-workflows.md)
 
 ---
 
@@ -77,11 +116,12 @@ The timer should now count down from 5 minutes.
 
 - [ ] Recognizing when to use plan mode
 - [ ] Plan mode (Shift+Tab and `/plan`)
+- [ ] Extended thinking (`think`, `ultrathink`)
+- [ ] Scope discipline
 - [ ] Reviewing and approving plans
-- [ ] Feature implementation workflow
 
 ## Navigation
 
 | Previous | Up | Next |
 |----------|-----|------|
-| [Chapter 3: Quick Wins](03-quick-wins.md) | [README](../README.md) | [Chapter 5: Make It Pretty](05-make-it-pretty.md) |
+| [Chapter 3: Quick Wins](03-quick-wins.md) | [README](../README.md) | [Chapter 5: Git Workflows](05-git-workflows.md) |
