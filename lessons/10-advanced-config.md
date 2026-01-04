@@ -1,4 +1,4 @@
-# Chapter 11: Advanced Configuration
+# Chapter 10: Advanced Configuration
 
 Time for the power-user settings: permissions, headless mode, and team configuration.
 
@@ -181,7 +181,7 @@ for new team members joining this project.
 
 ---
 
-[Next: Chapter 12 - Multi-Session Workflows →](12-multi-session.md)
+[Next: Chapter 11 - Multi-Session Workflows →](11-multi-session.md)
 
 ---
 
@@ -197,4 +197,4 @@ for new team members joining this project.
 
 | Previous | Up | Next |
 |----------|-----|------|
-| [Chapter 10: Hooks](10-hooks.md) | [README](../README.md) | [Chapter 12: Multi-Session Workflows](12-multi-session.md) |
+| [Chapter 9: Hooks](09-hooks.md) | [README](../README.md) | [Chapter 11: Multi-Session Workflows](11-multi-session.md) |

@@ -1,4 +1,4 @@
-# Chapter 7: Context Mastery
+# Chapter 6: Context Mastery
 
 By now, your context is probably getting heavy. Claude has read files, seen screenshots, made edits, run commands. Let's learn to manage this.
 
@@ -148,7 +148,7 @@ For long sessions:
 
 ---
 
-[Next: Chapter 8 - Make It Pretty →](08-make-it-pretty.md)
+[Next: Chapter 7 - Make It Pretty →](07-make-it-pretty.md)
 
 ---
 
@@ -164,4 +164,4 @@ For long sessions:
 
 | Previous | Up | Next |
 |----------|-----|------|
-| [Chapter 6: Testing](06-testing.md) | [README](../README.md) | [Chapter 8: Make It Pretty](08-make-it-pretty.md) |
+| [Chapter 5: Testing](05-testing.md) | [README](../README.md) | [Chapter 7: Make It Pretty](07-make-it-pretty.md) |

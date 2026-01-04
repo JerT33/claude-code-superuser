@@ -1,4 +1,4 @@
-# Chapter 10: Hooks
+# Chapter 9: Hooks
 
 Claude Code hooks let you run shell commands automatically when Claude performs certain actions. This is powerful for enforcing standards and automating workflows.
 
@@ -111,7 +111,7 @@ commit these changes
 
 ---
 
-[Next: Chapter 11 - Advanced Config →](11-advanced-config.md)
+[Next: Chapter 10 - Advanced Config →](10-advanced-config.md)
 
 ---
 
@@ -127,4 +127,4 @@ commit these changes
 
 | Previous | Up | Next |
 |----------|-----|------|
-| [Chapter 9: Custom Automation](09-custom-automation.md) | [README](../README.md) | [Chapter 11: Advanced Config](11-advanced-config.md) |
+| [Chapter 8: Custom Automation](08-custom-automation.md) | [README](../README.md) | [Chapter 10: Advanced Config](10-advanced-config.md) |

@@ -1,4 +1,4 @@
-# Chapter 12: Multi-Session Workflows
+# Chapter 11: Multi-Session Workflows
 
 This is where Claude Code becomes a true power tool. You'll orchestrate parallel work across multiple sessions, using `/resume` to coordinate.
 
@@ -239,7 +239,7 @@ Save a summary of this session for future reference.
 
 ---
 
-[Next: Chapter 13 - Cheat Sheet & Anti-Patterns →](13-cheatsheet.md)
+[Next: Chapter 12 - Cheat Sheet & Anti-Patterns →](12-cheatsheet.md)
 
 ---
 
@@ -256,4 +256,4 @@ Save a summary of this session for future reference.
 
 | Previous | Up | Next |
 |----------|-----|------|
-| [Chapter 11: Advanced Config](11-advanced-config.md) | [README](../README.md) | [Chapter 13: Cheat Sheet](13-cheatsheet.md) |
+| [Chapter 10: Advanced Config](10-advanced-config.md) | [README](../README.md) | [Chapter 12: Cheat Sheet](12-cheatsheet.md) |

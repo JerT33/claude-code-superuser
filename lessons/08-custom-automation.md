@@ -1,4 +1,4 @@
-# Chapter 9: Custom Automation
+# Chapter 8: Custom Automation
 
 You've been typing things like "commit these changes" throughout the tutorial. Now let's create shortcuts so you can just type `/commit` instead.
 
@@ -167,7 +167,7 @@ Try out your new `/commit` command:
 
 ---
 
-[Next: Chapter 10 - Hooks →](10-hooks.md)
+[Next: Chapter 9 - Hooks →](09-hooks.md)
 
 ---
 
@@ -182,4 +182,4 @@ Try out your new `/commit` command:
 
 | Previous | Up | Next |
 |----------|-----|------|
-| [Chapter 8: Make It Pretty](08-make-it-pretty.md) | [README](../README.md) | [Chapter 10: Hooks](10-hooks.md) |
+| [Chapter 7: Make It Pretty](07-make-it-pretty.md) | [README](../README.md) | [Chapter 9: Hooks](09-hooks.md) |

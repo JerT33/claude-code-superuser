@@ -10,6 +10,12 @@ Remember the task classification from your Global CLAUDE.md:
 
 The bugs we're fixing here are trivial. We don't need a planning phase. We just fix them.
 
+## Create a Branch
+
+```
+Create a branch called fix/initial-bugs
+```
+
 ## Fix the Typos
 
 ### Step 1: Ask Claude to Fix Typos
@@ -77,6 +83,14 @@ The function references `remaning` (typo) which doesn't exist. Claude should fix
 ```
 commit these changes
 ```
+
+## Create a PR
+
+```
+create a pull request
+```
+
+Claude pushes your branch and creates a PR. Merge it when ready.
 
 ## The App So Far
 

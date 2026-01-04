@@ -1,4 +1,4 @@
-# Chapter 6: Testing
+# Chapter 5: Testing
 
 The off-by-one bug from Chapter 0? A simple unit test would have caught it. Let's add tests to make sure bugs can't sneak back in.
 
@@ -71,7 +71,7 @@ commit these changes
 
 ---
 
-[Next: Chapter 7 - Context Mastery →](07-context-mastery.md)
+[Next: Chapter 6 - Context Mastery →](06-context-mastery.md)
 
 ---
 
@@ -86,4 +86,4 @@ commit these changes
 
 | Previous | Up | Next |
 |----------|-----|------|
-| [Chapter 5: Git Workflows](05-git-workflows.md) | [README](../README.md) | [Chapter 7: Context Mastery](07-context-mastery.md) |
+| [Chapter 4: First Feature](04-first-feature.md) | [README](../README.md) | [Chapter 6: Context Mastery](06-context-mastery.md) |

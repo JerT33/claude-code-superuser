@@ -1,4 +1,4 @@
-# Chapter 13: Cheat Sheet & Anti-Patterns
+# Chapter 12: Cheat Sheet & Anti-Patterns
 
 Congratulations—you've completed the tutorial. Here's your quick reference and a guide to common mistakes.
 
@@ -30,7 +30,7 @@ Congratulations—you've completed the tutorial. Here's your quick reference and
 | `/model` | Switch models (Opus, Sonnet, Haiku) |
 | `/plan` | View current plan |
 
-### Custom Commands (Chapter 9)
+### Custom Commands (Chapter 8)
 
 | Command | What It Does |
 |---------|--------------|
@@ -254,7 +254,7 @@ You did that—with Claude Code as your pair.
 
 | Previous | Up |
 |----------|-----|
-| [Chapter 12: Multi-Session Workflows](12-multi-session.md) | [README](../README.md) |
+| [Chapter 11: Multi-Session Workflows](11-multi-session.md) | [README](../README.md) |
 
 ---
 

@@ -20,10 +20,10 @@ Experienced engineers who want to:
 | Phase | Chapters | What You'll Learn |
 |-------|----------|-------------------|
 | **Foundation** | 0-3 | Setup, project init, basic commands, first commits |
-| **Core Skills** | 4-7 | Plan mode, git workflows, testing, context management |
-| **Power Features** | 8-10 | Visual feedback, custom automation, hooks |
-| **Advanced** | 11-12 | Permissions, headless/CI, multi-session orchestration |
-| **Reference** | 13 | Cheat sheet and anti-patterns |
+| **Core Skills** | 4-6 | Plan mode, testing, context management |
+| **Power Features** | 7-9 | Visual feedback, custom automation, hooks |
+| **Advanced** | 10-11 | Permissions, headless/CI, multi-session orchestration |
+| **Reference** | 12 | Cheat sheet and anti-patterns |
 
 ## The App's Transformation
 
@@ -72,21 +72,20 @@ python src/pomodoro.py start
 
 ### Phase 2: Core Skills
 - [Chapter 4: First Feature](lessons/04-first-feature.md) - Plan mode, extended thinking, scope discipline
-- [Chapter 5: Git Workflows](lessons/05-git-workflows.md) - Branches, PRs, and professional git
-- [Chapter 6: Testing](lessons/06-testing.md) - Add tests with pytest
-- [Chapter 7: Context Mastery](lessons/07-context-mastery.md) - Manage context like a pro
+- [Chapter 5: Testing](lessons/05-testing.md) - Add tests with pytest
+- [Chapter 6: Context Mastery](lessons/06-context-mastery.md) - Manage context like a pro
 
 ### Phase 3: Power Features
-- [Chapter 8: Make It Pretty](lessons/08-make-it-pretty.md) - Use visual feedback to improve the CLI
-- [Chapter 9: Custom Automation](lessons/09-custom-automation.md) - Create your own slash commands and skills
-- [Chapter 10: Hooks](lessons/10-hooks.md) - Automate quality checks
+- [Chapter 7: Make It Pretty](lessons/07-make-it-pretty.md) - Use visual feedback to improve the CLI
+- [Chapter 8: Custom Automation](lessons/08-custom-automation.md) - Create your own slash commands and skills
+- [Chapter 9: Hooks](lessons/09-hooks.md) - Automate quality checks
 
 ### Phase 4: Advanced
-- [Chapter 11: Advanced Config](lessons/11-advanced-config.md) - Permissions, headless mode, team setup
-- [Chapter 12: Multi-Session Workflows](lessons/12-multi-session.md) - Orchestrate parallel work with /resume
+- [Chapter 10: Advanced Config](lessons/10-advanced-config.md) - Permissions, headless mode, team setup
+- [Chapter 11: Multi-Session Workflows](lessons/11-multi-session.md) - Orchestrate parallel work with /resume
 
 ### Reference
-- [Chapter 13: Cheat Sheet & Anti-Patterns](lessons/13-cheatsheet.md) - Quick reference and common mistakes
+- [Chapter 12: Cheat Sheet & Anti-Patterns](lessons/12-cheatsheet.md) - Quick reference and common mistakes
 
 ## Skills You'll Learn
 
@@ -97,7 +96,7 @@ By completing this tutorial, you'll master Claude Code skills across these categ
 - **Context Management** - Monitor, compress, clear, revert, resume
 - **Thinking Modes** - `think`, `ultrathink`
 - **Visual Feedback** - Screenshots, image input
-- **Git Integration** - Commits, branches, PRs, stacked PRs
+- **Git Integration** - Commits, branches, PRs
 - **Automation** - Hooks, custom slash commands, skills
 - **Advanced** - Multi-session, headless/CI, permissions
 
