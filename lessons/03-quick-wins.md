@@ -90,7 +90,17 @@ commit these changes
 create a pull request
 ```
 
-Claude pushes your branch and creates a PR. Merge it when ready.
+Claude pushes your branch and creates a PR.
+
+## Merge and Return to Main
+
+After the PR is created, merge it (via GitHub or `gh pr merge`), then:
+
+```
+switch to main and pull latest
+```
+
+This keeps your main branch up to date before starting the next chapter.
 
 ## The App So Far
 

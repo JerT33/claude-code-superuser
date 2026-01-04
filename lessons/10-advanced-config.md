@@ -155,6 +155,12 @@ For teams, consider:
 
 ## The Exercise
 
+### Create a Branch
+
+```
+Create a branch called feature/advanced-config
+```
+
 ### Set Up Project Permissions
 
 ```
@@ -177,6 +183,22 @@ claude --headless
 ```
 Create a .claude/README.md that explains our Claude Code setup
 for new team members joining this project.
+```
+
+### Commit and PR
+
+```
+commit these changes
+```
+
+```
+create a pull request
+```
+
+Merge the PR, then return to main:
+
+```
+switch to main and pull latest
 ```
 
 ---

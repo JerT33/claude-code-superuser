@@ -74,20 +74,24 @@ Start a new Claude session:
 claude
 ```
 
-This is a fresh session. Implement the break timer:
+This is a fresh session. Create a branch and implement the break timer:
 
 ```
-Implement a break timer feature for the pomodoro app:
+Create a branch called feature/break-timer and implement:
 - After each pomodoro ends, offer a 5-minute break
 - Make break duration configurable with --break-minutes
 - Show blue progress bar during break (different from work)
 - Allow skipping with 's' key
 ```
 
-Work through the implementation. Commit when done:
+Work through the implementation. Commit and PR when done:
 
 ```
 commit these changes
+```
+
+```
+create a pull request
 ```
 
 Exit this session:
@@ -104,20 +108,24 @@ Start another new session:
 claude
 ```
 
-Implement daily goals:
+Create a branch and implement daily goals:
 
 ```
-Implement a daily goals feature for the pomodoro app:
+Create a branch called feature/daily-goals and implement:
 - Add --daily-goal flag to set target pomodoros for the day
 - Track progress in the history file
 - Show progress when starting: "Today: 3/8 pomodoros"
 - Celebrate when goal is reached
 ```
 
-Work through it. Commit:
+Work through it. Commit and PR:
 
 ```
 commit these changes
+```
+
+```
+create a pull request
 ```
 
 Exit:
@@ -125,6 +133,10 @@ Exit:
 ```
 exit
 ```
+
+### Merge Both PRs
+
+Before resuming, merge both feature PRs (via GitHub or `gh pr merge`). This ensures the code on main has both features when you resume.
 
 ### Part 5: Resume Main Session
 

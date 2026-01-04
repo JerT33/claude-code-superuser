@@ -112,6 +112,12 @@ commit these changes
 create a pull request
 ```
 
+Merge the PR, then return to main:
+
+```
+switch to main and pull latest
+```
+
 ## Test It
 
 Run the app yourself:

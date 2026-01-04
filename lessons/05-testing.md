@@ -4,6 +4,12 @@ The off-by-one bug from Chapter 0? A simple unit test would have caught it. Let'
 
 ## The Exercise
 
+### Create a Branch
+
+```
+Create a branch called feature/testing
+```
+
 ### Step 1: Ask Claude to Add Tests
 
 ```
@@ -61,12 +67,22 @@ A good rule of thumb:
 
 You don't need 100% coverage. Focus on testing logic that matters.
 
-## Commit
+## Commit and PR
 
 Once tests are passing:
 
 ```
 commit these changes
+```
+
+```
+create a pull request
+```
+
+Merge the PR, then return to main:
+
+```
+switch to main and pull latest
 ```
 
 ---

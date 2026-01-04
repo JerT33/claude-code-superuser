@@ -11,6 +11,12 @@ Claude can see images. This means you can:
 
 ## The Exercise
 
+### Create a Branch
+
+```
+Create a branch called feature/pretty-cli
+```
+
 ### Step 1: Screenshot the Current State
 
 Run the timer:
@@ -91,12 +97,22 @@ The progress bar is printing multiple lines instead of updating in place. Fix it
 Can you add a blinking cursor effect when paused?
 ```
 
-## Commit the Pretty Version
+## Commit and PR
 
 Once you're happy with the visual adjustments:
 
 ```
 commit these changes
+```
+
+```
+create a pull request
+```
+
+Merge the PR, then return to main:
+
+```
+switch to main and pull latest
 ```
 
 ---

@@ -111,19 +111,21 @@ Watch the context percentage drop.
 
 ### Step 3: Practice Revert
 
-Make an intentional mistake:
+Let's practice `/revert` safely. Make an intentional mistake:
 
 ```
 Delete the format_time function from pomodoro.py
 ```
 
-After Claude does it:
+After Claude deletes it, immediately revert:
 
 ```
 /revert
 ```
 
-The deletion is undone.
+The deletion is undone. The `/revert` command rolls back both the conversation and file changes, so nothing is lost.
+
+**Note:** If you forget to revert and move on, you can always use `git checkout -- src/pomodoro.py` to restore the file.
 
 ## Pro Tips
 

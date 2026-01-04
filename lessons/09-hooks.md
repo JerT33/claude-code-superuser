@@ -13,6 +13,12 @@ Claude Code hooks let you run shell commands automatically when Claude performs 
 
 ## The Exercise
 
+### Create a Branch
+
+```
+Create a branch called feature/hooks
+```
+
 ### Step 1: View Current Hooks
 
 ```
@@ -101,12 +107,22 @@ Add a notification hook that alerts me if any Bash command takes longer than 30 
 - Hooks that slow down every operation
 - Complex logic (use skills instead)
 
-## Commit
+## Commit and PR
 
 Once you're happy with your hooks setup:
 
 ```
 commit these changes
+```
+
+```
+create a pull request
+```
+
+Merge the PR, then return to main:
+
+```
+switch to main and pull latest
 ```
 
 ---

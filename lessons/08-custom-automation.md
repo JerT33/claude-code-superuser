@@ -11,6 +11,12 @@ Claude Code supports two types of custom automation:
 | **Slash Command** | Quick shortcut for a prompt | Simple, frequent tasks |
 | **Skill** | More complex automation with full prompts | Multi-step workflows |
 
+## Create a Branch
+
+```
+Create a branch called feature/custom-commands
+```
+
 ## Creating a Slash Command
 
 ### Step 1: Create a Commit Command
@@ -157,12 +163,24 @@ Delete the /release skill, I want to rewrite it.
 Edit the /test command to also include coverage.
 ```
 
-## Commit
+## Commit and PR
 
 Try out your new `/commit` command:
 
 ```
 /commit
+```
+
+Then create a PR:
+
+```
+create a pull request
+```
+
+Merge the PR, then return to main:
+
+```
+switch to main and pull latest
 ```
 
 ---
